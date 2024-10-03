@@ -1,0 +1,131 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: hsl(30, 38%, 92%);
+    font-weight: 500;
+}   
+
+h2, h3 {
+    font-family: 'Fraunces';
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+h2{
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+h3 {
+    color: hsl(158, 36%, 37%);
+}
+
+p {
+    font-size: 0.875rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+
+h2, h3, p {
+    margin-bottom: 0.8rem;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.product-card {
+    max-width: 21rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.55rem;
+    overflow: hidden;
+}
+
+
+
+.text {
+    padding: 1.5rem;
+}
+
+.mobile-image {
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    max-width: 100%;
+    
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 1rem;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.8rem 0;
+    border: none;
+}
+
+button img {
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(158, 33%, 26%);
+}
+
+@media (min-width: 800px) {
+    .mobile-image {
+        display: none;
+    }
+
+    .desktop-image {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .product-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 34rem;
+        align-items: center;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
